@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nutrition App</string>
+    <string name="title_activity_result">ResultActivity</string>
+
+    <!-- Pictures -->
+    <array name="profile_pics">
+        <item>@drawable/food</item>
+    </array>
+</resources>

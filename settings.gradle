@@ -1,0 +1,1 @@
+include ':app', ':apache-httpcomponents-httpclient', ':apache-httpcomponents-httpcore', ':commons-logging-1.2', ':java-json'

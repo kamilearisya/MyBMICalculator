@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyDefault"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.karr.mybmicalculator.ResultActivity"
+    tools:showIn="@layout/activity_result">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/architects_daughter"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="NUTRITION DIET "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/sp_blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:fontFamily="@font/alice"
+        android:text="A"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sp_category"
+        android:layout_alignBottom="@+id/sp_category"
+        android:layout_toLeftOf="@+id/sp_blood"
+        android:layout_toStartOf="@+id/sp_blood"
+        android:fontFamily="@font/alice"
+        android:text="In category :"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/alice"
+        android:text="Food that good for blood type  : "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sp_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_blood"
+        android:layout_alignStart="@+id/sp_blood"
+        android:layout_below="@+id/sp_blood"
+        android:layout_weight="1"
+        android:fontFamily="@font/alice"
+        android:text="Overweight"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/nodataImg"
+        android:fontFamily="@font/alice"
+        android:text="You need to eat :"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="230dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/label1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/greyDefault"
+        android:padding="10dp"></ListView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonstyle1"
+        android:fontFamily="serif"
+        android:onClick="fnSave"
+        android:text="View History"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/nodataImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nodata"
+        android:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/noserver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nonetwork"
+        android:visibility="invisible" />
+
+</RelativeLayout>
